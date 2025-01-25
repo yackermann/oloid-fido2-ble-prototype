@@ -39,14 +39,12 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.compiler)
     implementation(libs.material)
     implementation(libs.play.services.basement)
-
     implementation("co.nstant.in:cbor:0.9")
     implementation(libs.precis)
     implementation(libs.gson)
@@ -58,6 +56,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.guava)
     implementation(libs.jackson.core)
     implementation(libs.jackson.databind)
